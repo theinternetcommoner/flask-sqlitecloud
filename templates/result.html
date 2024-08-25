@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Result</title>
+	</head>
+	<body>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Date</th>
+					<th>Entry</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for data in rows %}
+					<tr>
+						<td>{{ data[0] }}</td>
+						<td>{{ data[1] }}</td>
+						<td>{{ data[2] }}</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</body>
+</html>
+
