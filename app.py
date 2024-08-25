@@ -33,7 +33,7 @@ def insert():
 	db = 'journalDB'
 	query = """
 		INSERT INTO tbl_journal(journalDate, journalEntry)
-		VALUES("2024-08-25", "second entry")
+		VALUES("2024-08-25", "fourth entry")
 	"""
 	conn.execute(f"USE DATABASE {db}")
 	cursor = conn.execute(query)
