@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	conn = sqlitecloud.connect('sqlitecloud://cjl2u0m3sz.sqlite.cloud:8860?apikey=rYWBLxxIeLLKj5McdY2xWs5WpWExR9aIphV005t6wQA')
+	conn = sqlitecloud.connect('nlxh8agqik.sqlite.cloud')
 	db = 'journalDB'
 	sql = """
 		SELECT * FROM tbl_journal
